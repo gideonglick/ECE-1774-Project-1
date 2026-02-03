@@ -1,7 +1,6 @@
-import pandas as pd
-
+from bus import Bus
 class Load:
-    def __init__(self, name, bus1, p, v):
+    def __init__(self, name:str, bus1:Bus, p:float, v:float):
         self.name = name
         self.bus1 = bus1
         self.p = p
@@ -12,8 +11,3 @@ class Load:
     def calc_g(self):
         self.g = 1/self.r
 
-if __name__ == '__main__':
-    load1 = Load("Load1", "B", 2000.0, 100.0)
-    load1.calc_g()
-    print(f"Load1 Resistance = {load1.r} Ohms")
-    print(f"Load1 Conductance = {load1.g} Siemens")
