@@ -1,5 +1,5 @@
 class Bus:
-    def __init__(self, name, v):
+    def __init__(self, name):
         self.name = name
         self.v = 0.0
 
