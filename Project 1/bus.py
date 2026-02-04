@@ -5,3 +5,4 @@ class Bus:
 
     def set_bus_v(self, bus_v):
         self.v = bus_v
+
