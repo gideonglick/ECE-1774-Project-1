@@ -10,7 +10,7 @@ class Solution:
         buses = self.circuit.buses
         resistors = self.circuit.resistors
         loads = self.circuit.loads
-        vsource = list(self.circuit.vsource.values())[0]  # CHANGE 1: Get from dict
+        vsource = list(self.circuit.vsource.values())[0]
 
         V_a = vsource.v
         bus_a_name = vsource.bus1.name
